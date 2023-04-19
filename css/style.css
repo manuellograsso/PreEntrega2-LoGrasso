@@ -1,0 +1,265 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+}
+header {
+  padding: 0;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1320px;
+}
+
+header {
+  background-color: rgb(53, 53, 53);
+  padding: 0.5rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  left: 0;
+  right: 0;
+  background-size: 100% 100%;
+  background-position: center;
+}
+
+image {
+  max-width: 100%;
+}
+.nav_list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+  text-align: center;
+}
+.nav_list {
+  list-style: none;
+  text-align: center;
+  padding: 20px 0;
+}
+.nav_link {
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1rem;
+}
+
+.display_2 {
+  text-transform: capitalize;
+  color: rgb(29, 29, 29);
+  font-size: 4.5rem;
+  font-weight: 700;
+}
+.display_3 {
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: rgb(27, 27, 27);
+  text-transform: capitalize;
+  text-align: left;
+}
+.display_4 {
+  text-align: right;
+}
+#contacto {
+  text-align: center;
+  background-color: rgb(109, 109, 109);
+}
+footer {
+  background-image: linear-gradient(
+      rgba(31, 31, 31, 0.5),
+      rgba(75, 74, 74, 0.5)
+    ),
+    url(../img/hormigon.jpg);
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.logos-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mail {
+  color: white;
+  text-align: center;
+  font-size: large;
+}
+.logo_mail a {
+  color: white;
+}
+.logo_inicial {
+  text-align: center;
+  background-image: linear-gradient(
+      rgba(31, 31, 31, 0.5),
+      rgba(75, 74, 74, 0.5)
+    ),
+    url(../img/hormigon.jpg);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+}
+.texto_princi {
+  text-align: left;
+}
+.containerr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.left-column {
+  width: 60%;
+}
+
+.right-column {
+  width: 35%;
+}
+.faq-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.faq {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  max-width: 800px;
+}
+
+.faq > div {
+  flex-basis: 300px;
+}
+h1 {
+  margin: 20px 0;
+}
+.form-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-gap: 10px;
+}
+label {
+  text-align: right;
+}
+
+/* Estilos para pantallas pequeñas */
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 90%;
+  }
+
+  .nav_list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav_link {
+    padding: 0.5rem;
+  }
+
+  .left-column {
+    width: 100%;
+  }
+
+  .right-column {
+    width: 100%;
+  }
+
+  .form-container {
+    grid-template-columns: 1fr;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Estilos para pantallas medianas */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .container {
+    width: 90%;
+  }
+
+  .nav_list {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .nav_link {
+    padding: 1rem;
+  }
+
+  .left-column {
+    width: 70%;
+  }
+
+  .right-column {
+    width: 25%;
+  }
+
+  .form-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr 3fr;
+  }
+}
+
+/* Estilos para pantallas grandes */
+@media only screen and (min-width: 1025px) {
+  .container {
+    width: 80%;
+  }
+
+  .nav_list {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .nav_link {
+    padding: 1rem;
+  }
+
+  .left-column {
+    width: 60%;
+  }
+
+  .right-column {
+    width: 35%;
+  }
+
+  .form-container {
+    grid-template-columns: 1fr 3fr;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr 3fr;
+  }
+}
